@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Audiowide', cursive;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: #1f242d;
+    
+}
+section{
+    min-height: 100vh;
+    padding:10rem 9% 2rem ;
+    text-align: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.header .sticky{
+    border-bottom: .1rem solid rgba(0,0,0,.2);
+}
+.logo{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: white;
+    margin-left: 4rem;
+    transition: .3s;
+}
+.navbar a:hover{
+    background: linear-gradient(90.91deg, #E66A6A 0.31%, #CDE39C 99.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: white;
+    display: none;
+}
+.home{
+    background-image: url('backdrop\ \(1\)\ \(1\).jpg');
+    background-size: cover;
+}
+
+.home-content h3{
+    font-size: 2rem;
+    font-weight:5;
+    background: linear-gradient(90.91deg, #E66A6A 0.31%, #CDE39C 99.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;   
+
+}
+.home-content h1{
+    font-size: 4rem;
+    line-height: 1.3;
+    background: linear-gradient(90.91deg, #E66A6A 0.31%, #CDE39C 99.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;  
+}
+
+#profile-pic{
+    width: 20vw;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid  rgb(238, 129, 129) ;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #e58080;
+    margin: 3rem 1.5rem 3rem 0;
+    transition:.5s ease ; 
+}
+.social-media a:hover{
+   box-shadow: 0 0 2rem #e58080; 
+   background: #e58080;
+   color: black;
+}
+.about{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-image: url('backdrop\ \(2\).jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.about-content{
+    background: linear-gradient(90.91deg, #E66A6A 0.31%, #CDE39C 99.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; 
+    font-size: 3vmin;
+    overflow-x: hidden;
+
+}
+.skills h2{
+    text-align: center;
+    font-size: 50px;
+}
+.skills {
+   color: #e58080;
+   height: fit-content;
+   width: 100vw;
+   padding: 80px;
+}
+.skills span{
+    color: white;
+}
+.skills .skills-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+
+}
+.skills-row .skills-column{
+    flex: 1 1 40rem;
+}
+.skills-row{
+    padding: 50px;
+}
+.skills-column .title{
+    font-size: 2.5rem;
+    margin:0 0 1.5rem ;
+    
+
+}
+.skills-box .skills-content{
+    position: relative;
+    border:.2rem solid #e58080 ;
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+}
+.skills-content .progress{
+    padding: 1rem 0;
+}
+.skills-column .progress h3{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-column .progress h3 span{
+    color:white ;
+}
+.skills-content .progress .bar{
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid #e58080;
+    padding: .5rem;
+    /* margin: 1rem 0; */
+}
+.skills-content .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: 0.3rem;
+   background: #e58080;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width: 80%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width: 75%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width: 80%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
+    width: 95%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
+    width: 85%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
+    width: 80%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
+    width: 70%;
+}
+.projects{
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("Black\ Minimalist\ Solar\ System\ Desktop\ Wallpaper.png");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+  
+    
+    
+}
+.cards{
+    height: 250px;
+    width: 200px;
+    background: linear-gradient(138.07deg, rgba(39, 38, 38, 0.8) 0%, rgba(72, 48, 48, 0.8) 97.8%);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    text-align: center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size:medium;
+    margin: 50px;
+  
+}
+.cards:hover{
+    background: linear-gradient(138.07deg, rgb(64, 62, 62) 0%, rgb(135, 88, 88) 97.8%);
+    text-decoration: underline;
+
+}
+.cards a{
+    color: white;
+}
+
+
+@media only screen and (max-width:950px){
+    .about{
+        flex-wrap: wrap;
+    }
+    .about-content{
+        font-size: 4vmin;
+    }
+    #profile-pic{
+        width: 60vw;
+    }
+    .home-content{
+        margin-top: 10vh;
+    }
+    .skills-row{
+        padding: 50px 10px;
+    }
+    .home-img{
+        margin-top: 10vh;
+    }
+}
+
+@media(max-width:991px){
+    .header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+    .navbar a:hover{
+        color: gold;
+    }
+}
+@media(max-width:768px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        padding: 1rem 3%;
+        border-top: .1rem ;
+        display: none;
+        background-color: rgb(17, 16, 16);
+        width: 100vw;
+    }
+    .active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        text-align: center;
+    }
+    
+}
